@@ -1,0 +1,24 @@
+in the dope sheet switch to action editor.
+
+click new and make a new action. Name it
+Add keyframes for this action
+Stash the action
+
+Open the NLA editor - these should be a track for each stashed action
+Select your first action *IN THE DOPE SHEET (drop down to right of Stash button)
+Click 'push down' - you will get a new track in the NLA with just that action strip
+Rename the track (eg run gets named runaction)
+
+save file
+
+file-> export gltf  
+choose gltf embedded
+in the drop down choose 'animation'
+under the check box Animation there's an expansion menu - open and choose NLA Strips
+
+          animations = gltf.animations;
+
+            headshake = animation_mixer.clipAction( animations[ 0 ] );
+            animation[0].name will be the action name 
+            
+            
